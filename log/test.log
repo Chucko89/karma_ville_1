@@ -1,0 +1,582 @@
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (12.8ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('x') LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('x') LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('xx') LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('xx') LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx') LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_1') LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_1@example.com') LIMIT 1
+  [1m[36mSQL (3.2ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["email", "email_1@example.com"], ["first_name", "Daron"], ["last_name", "Haley"], ["updated_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["username", "user_1"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('USER_1') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('USER_1') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_2') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_2@example.com') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["email", "email_2@example.com"], ["first_name", "Savanna"], ["last_name", "Schneider"], ["updated_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["username", "user_2"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('EMAIL_2@EXAMPLE.COM') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('EMAIL_2@EXAMPLE.COM') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_4') LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_4@example.com') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["email", "email_4@example.com"], ["first_name", "Jadyn"], ["last_name", "Feeney"], ["updated_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["username", "user_4"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["label", "ipsam"], ["updated_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["user_id", 3], ["value", 250]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["label", "officiis"], ["updated_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["user_id", 3], ["value", 250]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_5') LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_5@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["email", "email_5@example.com"], ["first_name", "Rachael"], ["last_name", "West"], ["updated_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["username", "user_5"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["label", "quia"], ["updated_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["user_id", 4], ["value", 100]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["label", "temporibus"], ["updated_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["user_id", 4], ["value", 100]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_6') LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_6@example.com') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["email", "email_6@example.com"], ["first_name", "Quinn"], ["last_name", "Powlowski"], ["updated_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["username", "user_6"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["label", "nulla"], ["updated_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["user_id", 5], ["value", 400]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["label", "velit"], ["updated_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["user_id", 5], ["value", 400]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "karma_points" ON "karma_points"."user_id" = "users"."id" GROUP BY users.id ORDER BY SUM(karma_points.value) DESC[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_7') LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_7@example.com') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["email", "email_7@example.com"], ["first_name", "Jadyn"], ["last_name", "Feeney"], ["updated_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["username", "user_7"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["label", "ipsam"], ["updated_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["user_id", 6], ["value", 250]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["label", "officiis"], ["updated_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["user_id", 6], ["value", 250]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mSELECT SUM("karma_points"."value") AS sum_id FROM "karma_points" WHERE "karma_points"."user_id" = 6[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_8') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_8@example.com') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["email", "email_8@example.com"], ["first_name", "Jadyn"], ["last_name", "Feeney"], ["updated_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["username", "user_8"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mSELECT SUM("karma_points"."value") AS sum_id FROM "karma_points" WHERE "karma_points"."user_id" = 7[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["label", "ipsam"], ["updated_at", Mon, 23 Sep 2013 17:05:43 UTC +00:00], ["user_id", 7], ["value", 10]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.3ms)[0m  [1mSELECT SUM("karma_points"."value") AS sum_id FROM "karma_points" WHERE "karma_points"."user_id" = 7[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_1') LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_1@example.com') LIMIT 1
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["email", "email_1@example.com"], ["first_name", "Jaqueline"], ["last_name", "Reichert"], ["updated_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["username", "user_1"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (1.2ms)[0m  [1mSELECT SUM("karma_points"."value") AS sum_id FROM "karma_points" WHERE "karma_points"."user_id" = 8[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["label", "accusantium"], ["updated_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["user_id", 8], ["value", 10]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSELECT SUM("karma_points"."value") AS sum_id FROM "karma_points" WHERE "karma_points"."user_id" = 8[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_2') LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_2@example.com') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["email", "email_2@example.com"], ["first_name", "Jaqueline"], ["last_name", "Reichert"], ["updated_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["username", "user_2"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["label", "accusantium"], ["updated_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["user_id", 9], ["value", 250]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["label", "officia"], ["updated_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["user_id", 9], ["value", 250]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_3') LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_3@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["email", "email_3@example.com"], ["first_name", "Emerson"], ["last_name", "Considine"], ["updated_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["username", "user_3"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["label", "ex"], ["updated_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["user_id", 10], ["value", 100]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["label", "dolores"], ["updated_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["user_id", 10], ["value", 100]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_4') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_4@example.com') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["email", "email_4@example.com"], ["first_name", "Doug"], ["last_name", "Bruen"], ["updated_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["username", "user_4"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["label", "et"], ["updated_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["user_id", 11], ["value", 400]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["label", "assumenda"], ["updated_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["user_id", 11], ["value", 400]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "karma_points" ON "karma_points"."user_id" = "users"."id" GROUP BY users.id ORDER BY SUM(karma_points.value) DESC[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_6') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_6@example.com') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["email", "email_6@example.com"], ["first_name", "Jaqueline"], ["last_name", "Reichert"], ["updated_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["username", "user_6"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["label", "accusantium"], ["updated_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["user_id", 12], ["value", 250]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["label", "officia"], ["updated_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["user_id", 12], ["value", 250]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSELECT SUM("karma_points"."value") AS sum_id FROM "karma_points" WHERE "karma_points"."user_id" = 12[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('x') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('x') LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('xx') LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('xx') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_7') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_7@example.com') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["email", "email_7@example.com"], ["first_name", "Mitchel"], ["last_name", "Barrows"], ["updated_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["username", "user_7"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('EMAIL_7@EXAMPLE.COM') LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('EMAIL_7@EXAMPLE.COM') LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_8') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_8@example.com') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["email", "email_8@example.com"], ["first_name", "Laisha"], ["last_name", "Haley"], ["updated_at", Mon, 23 Sep 2013 17:20:54 UTC +00:00], ["username", "user_8"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('USER_8') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('USER_8') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (11.5ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (19.0ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('x') LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('x') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('xx') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('xx') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx') LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_1') LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_1@example.com') LIMIT 1
+  [1m[36mSQL (35.9ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["email", "email_1@example.com"], ["first_name", "Christa"], ["last_name", "Bradtke"], ["updated_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["username", "user_1"]]
+  [1m[35m (0.3ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('USER_1') LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('USER_1') LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_2') LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_2@example.com') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["email", "email_2@example.com"], ["first_name", "Darrin"], ["last_name", "Quitzon"], ["updated_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["username", "user_2"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('EMAIL_2@EXAMPLE.COM') LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('EMAIL_2@EXAMPLE.COM') LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_4') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_4@example.com') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["email", "email_4@example.com"], ["first_name", "Jessica"], ["last_name", "Deckow"], ["updated_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["username", "user_4"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["label", "aspernatur"], ["updated_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["user_id", 17], ["value", 250]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["label", "ut"], ["updated_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["user_id", 17], ["value", 250]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_5') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_5@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["email", "email_5@example.com"], ["first_name", "Jessica"], ["last_name", "Deckow"], ["updated_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["username", "user_5"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["label", "aspernatur"], ["updated_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["user_id", 18], ["value", 250]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["label", "ut"], ["updated_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["user_id", 18], ["value", 250]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_6') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_6@example.com') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["email", "email_6@example.com"], ["first_name", "Melvina"], ["last_name", "Kovacek"], ["updated_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["username", "user_6"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["label", "dolorem"], ["updated_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["user_id", 19], ["value", 100]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["label", "quia"], ["updated_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["user_id", 19], ["value", 100]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_7') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_7@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["email", "email_7@example.com"], ["first_name", "Kevon"], ["last_name", "Sanford"], ["updated_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["username", "user_7"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["label", "veniam"], ["updated_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["user_id", 20], ["value", 400]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["label", "praesentium"], ["updated_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["user_id", 20], ["value", 400]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (12.9ms)[0m  SELECT "users".* FROM "users" INNER JOIN "karma_points" ON "karma_points"."user_id" = "users"."id" GROUP BY users.id ORDER BY SUM(karma_points.value) DESC
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_8') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_8@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["email", "email_8@example.com"], ["first_name", "Jessica"], ["last_name", "Deckow"], ["updated_at", Mon, 23 Sep 2013 18:59:37 UTC +00:00], ["username", "user_8"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.8ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_1') LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_1@example.com') LIMIT 1
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["email", "email_1@example.com"], ["first_name", "Selena"], ["last_name", "Rau"], ["updated_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["username", "user_1"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mSELECT SUM("karma_points"."value") AS sum_id FROM "karma_points" WHERE "karma_points"."user_id" = 22[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["label", "aut"], ["updated_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["user_id", 22], ["value", 10]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSELECT SUM("karma_points"."value") AS sum_id FROM "karma_points" WHERE "karma_points"."user_id" = 22[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_3') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_3@example.com') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["email", "email_3@example.com"], ["first_name", "Selena"], ["last_name", "Rau"], ["updated_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["username", "user_3"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["label", "aut"], ["updated_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["user_id", 23], ["value", 250]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["label", "rerum"], ["updated_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["user_id", 23], ["value", 250]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSELECT SUM("karma_points"."value") AS sum_id FROM "karma_points" WHERE "karma_points"."user_id" = 23[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_4') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_4@example.com') LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["email", "email_4@example.com"], ["first_name", "Selena"], ["last_name", "Rau"], ["updated_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["username", "user_4"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["label", "aut"], ["updated_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["user_id", 24], ["value", 250]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["label", "rerum"], ["updated_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["user_id", 24], ["value", 250]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_5') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_5@example.com') LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["created_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["email", "email_5@example.com"], ["first_name", "Doyle"], ["last_name", "Durgan"], ["updated_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["username", "user_5"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["label", "illum"], ["updated_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["user_id", 25], ["value", 100]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["label", "quas"], ["updated_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["user_id", 25], ["value", 100]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_6') LIMIT 1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_6@example.com') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["email", "email_6@example.com"], ["first_name", "Cordia"], ["last_name", "Pouros"], ["updated_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["username", "user_6"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["label", "dolore"], ["updated_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["user_id", 26], ["value", 400]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "karma_points" ("created_at", "label", "updated_at", "user_id", "value") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["label", "quo"], ["updated_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["user_id", 26], ["value", 400]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "karma_points" ON "karma_points"."user_id" = "users"."id" GROUP BY users.id ORDER BY SUM(karma_points.value) DESC[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('x') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('x') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('xx') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('xx') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_7') LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_7@example.com') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["email", "email_7@example.com"], ["first_name", "Michele"], ["last_name", "Thiel"], ["updated_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["username", "user_7"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('USER_7') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('USER_7') LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."username") = LOWER('user_8') LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('email_8@example.com') LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "first_name", "last_name", "updated_at", "username") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["email", "email_8@example.com"], ["first_name", "Shea"], ["last_name", "Gorczany"], ["updated_at", Mon, 23 Sep 2013 19:05:20 UTC +00:00], ["username", "user_8"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('EMAIL_8@EXAMPLE.COM') LIMIT 1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('EMAIL_8@EXAMPLE.COM') LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
