@@ -9,4 +9,18 @@
   <% @users.each do |user| %>
     <%= render 'user_row', :user => user %>
   <% end %>
+  <ul class="pager">
+  <% if @page_id && @page_id > 1 %>
+    <li><%= link_to('Previous', user_path(@page_id - 1)) %></li>
+    <li><%= link_to('Next', user_path(@page_id + 1)) %></li>
+  <% else %>
+    <li><%= link_to('Next', user_path(2)) %></li>
+  <% end %>
+  </ul>
 </table>
+
+
+
+
+
+

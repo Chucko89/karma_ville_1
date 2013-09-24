@@ -7,6 +7,7 @@ FactoryGirl.define do
     last_name  { Faker::Name.last_name }
     username
     email
+    karma_total { rand 100000 }
 
     factory :user_with_karma do
       ignore do

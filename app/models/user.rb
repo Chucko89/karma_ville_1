@@ -17,6 +17,8 @@ class User < ActiveRecord::Base
             :format => {:with => /^[\w+\-.]+@[a-z\d\-.]+\.[a-z]+$/i},
             :uniqueness => {:case_sensitive => false}
 
+  PER_PAGE = 50
+
   def self.by_karma
     # joins(:karma_points).group('users.id').order('SUM(karma_points.value) DESC')
     User.order("karma_total DESC")
@@ -29,4 +31,10 @@ class User < ActiveRecord::Base
   def full_name
     "#{first_name} #{last_name}"
   end
+
+  def self.page(num)
+    offset_var = (num - 1) * PER_PAGE if num > 1 
+    User.by_karma.limit(PER_PAGE).offset(offset_var)
+  end
+
 end
